@@ -1,0 +1,84 @@
+/* Styles for the individual achievement card */
+.achievement-card {
+  background: linear-gradient(135deg, #f9c9b6, #f9708c); /* Gradient background */
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  margin: 20px;
+  width: 100%; /* Allow cards to expand as per the container */
+  max-width: 300px; /* Set max-width for consistency */
+  height: auto; /* Make height responsive */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for achievement card */
+.achievement-card:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.5); /* Enhanced shadow on hover */
+}
+
+/* Header styles inside the achievement card */
+.achievement-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Icon styles within the achievement header */
+.achievement-header i {
+  margin-right: 10px; /* Space between icon and title */
+  font-size: 1.5rem; /* Icon size */
+  color: #fff; /* Icon color */
+}
+
+/* Date styling within the achievement card */
+.achievement-date {
+  font-size: 0.9rem;
+  color: #e0e0e0; /* Lighter color for date */
+}
+
+/* Styles for the achievements container */
+.achievements {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align cards to the top */
+  flex-wrap: wrap; /* Allow wrapping of cards */
+  max-width: 1200px; /* Set a max width for the container */
+  margin: 0 auto; /* Center the container */
+  gap: 20px; /* Add spacing between cards */
+}
+
+/* Responsive for tablets and small screens */
+@media (max-width: 768px) {
+  .achievements {
+    flex-direction: column; /* Stack cards vertically */
+    align-items: center; /* Center cards */
+    justify-content: center;
+  }
+
+  .achievement-card {
+    width: 90%; /* Make cards responsive and occupy most of the screen */
+    height: auto; /* Allow height to adjust based on content */
+    margin: 10px 0; /* Reduce margin for smaller screens */
+  }
+}
+
+/* Extra responsiveness for mobile screens */
+@media (max-width: 480px) {
+  .achievement-card {
+    width: 100%; /* Cards take full width */
+    padding: 15px; /* Adjust padding */
+    margin: 10px 0; /* Reduce margin */
+  }
+
+  .achievement-header i {
+    font-size: 1.2rem; /* Slightly reduce icon size */
+  }
+
+  .achievement-date {
+    font-size: 0.8rem; /* Adjust font size */
+  }
+}

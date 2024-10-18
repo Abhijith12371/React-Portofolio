@@ -1,0 +1,59 @@
+/* Container for information on the home page */
+.info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 20px;
+    transition: 0.5s all ease-in;
+}
+
+/* Gradient effect for the title text */
+.red-gradient {
+    background: linear-gradient(90deg, #ff5733, #ffb433); /* Gradient for text */
+    background-clip: text;
+    -webkit-text-fill-color: transparent; /* Makes the gradient visible */
+    font-size: 2.5rem;
+    margin: 20px 0;
+    text-align: center;
+}
+
+/* Paragraph styles */
+.info p {
+    max-width: 800px;
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Button styling */
+button {
+    background: linear-gradient(90deg, #ff5733, #ffb433);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+/* Hover effect for buttons */
+button:hover {
+    background: linear-gradient(90deg, #ffb433, #ff5733);
+}
+
+.learn{
+    padding: 12px;
+}
+
+.container {
+    padding-top: 60px; /* Adjust this value based on your nav height */
+}
+/* Add this to your CSS file */
+.section {
+    padding-top: 70px; /* Ensure this is greater than or equal to the navbar height */
+    margin-bottom: 30px; /* Optional: Add some margin below each section for spacing */
+}
